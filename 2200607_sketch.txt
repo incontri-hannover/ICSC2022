@@ -1,0 +1,31 @@
+BOUNCING
+
+1. Model of a bouncing ball in Andy Farnell's "Designing Sound"
+
+explain figure 30.1 in andy
+
+explain andy's way to implement:
+- set a total duration of the process (e.g. 3 sec)
+- set a time intervall between first and second bounce (e.g. 300 ms)
+- perform a linear decay of the time intervals over the total duration
+- trigger one bounce sound at the beginning of each time interval
+- and what should be done, although andy is not doing it: define a minimum interval at which the process is about to stop (e.g. 5 ms)
+- the overall amplitude decays linearly from 0.2 to 0 (amp)
+
+this is the unit for generating the events, i.e. the single bounces.  each of them is created like this:
+- it has an envelope for the amplitudes which goes from 1 to 0 in a time interval of 2/3 of the duration of this bounce, with squared shape
+- it performs a frequency modulation with these parameters:
+  - carrier frequency is 80 Hz plus a fast decaying value between x Hz and 0 Hz (double squared shape of the bounce duration)
+  - x Hz is moving from 130 Hz for the first bounce to nearly 0 Hz for the last bounce
+  - modulator frequency is 120 Hz
+  - modulator amplitude is 70 for the first bounce and nearly 0 for the last one
+
+2. General program flow -> Marijana's figure
+
+3. Implementation in Csound
+
+4. Alternatives for this Implementation in Csound
+
+5. Extensions for this model
+
+6. A small composition with reference to Iain McCurdy's Csound Haikus
