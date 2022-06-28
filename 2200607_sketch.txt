@@ -2,7 +2,7 @@ BOUNCING
 
 1. Model of a bouncing ball in Andy Farnell's "Designing Sound"
 
-explain figure 30.1 in andy
+Explain figure 30.1 in andy
 
 explain andy's way to implement:
 - set a total duration of the process (e.g. 3 sec)
