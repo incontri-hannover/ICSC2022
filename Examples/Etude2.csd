@@ -1,6 +1,6 @@
 <CsoundSynthesizer>
 <CsOptions>
--odac -d
+-odac -m128
 </CsOptions>
 <CsInstruments>
 
@@ -62,18 +62,6 @@ i "All_bounces" 85.1  3     0     1    0.7    3     9
 i "All_bounces" 85.8  9.3   0     1    5.5    14    350
 </CsScore>
 </CsoundSynthesizer>
-
-
-
-
-
-
-
-
-
-
-
-
 <bsbPanel>
  <label>Widgets</label>
  <objectName/>

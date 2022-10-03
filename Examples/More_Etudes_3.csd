@@ -1,6 +1,6 @@
 <CsoundSynthesizer>
 <CsOptions>
--odac -d -m128
+-odac -m128
 </CsOptions>
 <CsInstruments>
 sr = 44100
@@ -11,7 +11,7 @@ nchnls = 2
 seed 3
 rndseed random:i(0,1)
 
-//make all random in All_bounces and inalso  One_bounce
+//make all random in All_bounces and also in One_bounce
 
 instr Produce_Chaos
  iTotalDur = 60
@@ -66,13 +66,13 @@ instr One_bounce
  out(aL,aR)
 endin
 
-schedule("Produce_Chaos",0,0)
-
 </CsInstruments>
 <CsScore>
-
+i "Produce_Chaos" 0 70
 </CsScore>
 </CsoundSynthesizer>
+
+
 <bsbPanel>
  <label>Widgets</label>
  <objectName/>

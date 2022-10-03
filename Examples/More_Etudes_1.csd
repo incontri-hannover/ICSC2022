@@ -1,6 +1,6 @@
 <CsoundSynthesizer>
 <CsOptions>
--odac -d -m128
+-odac -m128
 </CsOptions>
 <CsInstruments>
 sr = 44100
@@ -59,13 +59,15 @@ instr One_bounce
  out(aL,aR)
 endin
 
-schedule("Produce_Chaos",0,0)
+;schedule("Produce_Chaos",0,0)
 
 </CsInstruments>
 <CsScore>
-
+i "Produce_Chaos" 0 70
 </CsScore>
 </CsoundSynthesizer>
+
+
 <bsbPanel>
  <label>Widgets</label>
  <objectName/>

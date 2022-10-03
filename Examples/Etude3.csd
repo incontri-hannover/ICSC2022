@@ -1,6 +1,6 @@
 <CsoundSynthesizer>
 <CsOptions>
--odac -d -m128
+-odac -m128
 </CsOptions>
 <CsInstruments>
 
